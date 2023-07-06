@@ -1,0 +1,42 @@
+
+
+body {
+  background: radial-gradient(#272727,#191a1c);
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+form {
+  width: 300px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #fcfbfb;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}

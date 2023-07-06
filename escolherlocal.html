@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Seus Locais</title>
+  <link href="escolherlocal.html" rel="stylesheet" type="text/css" />
+  <style>
+    body {
+      background: radial-gradient(#272727,#191a1c);
+      color: green;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .card {
+      background-color: rgb(0, 0, 0);
+      padding: 10px;
+      margin-bottom: 20px;
+      box-shadow: 2px 2px 5px #888888;
+    }
+
+    .card h2 {
+      margin-top: 0;
+    }
+
+    .card p {
+      margin-bottom: 0;
+    }
+
+    .card button {
+      display: block;
+      margin: 10px auto 0;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: rgb(0, 255, 85);
+      color: black;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .card button:hover {
+      background-color: #03945c;
+    }
+
+    .logo-img {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 150px; 
+    }
+    .card-criação button {
+      display: block;
+      margin: 10px auto 0;
+      padding: 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: rgb(0, 255, 85);
+      color: black;
+      font-size: 30px;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+  <img src="https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m2-20231-organizador-de-campeonato-2/blob/master/codigo/logo.png?raw=true" alt="" class="logo-img">
+  <div class="container">
+    <h1>Lugares disponíveis:</h1>
+    <div class="card">
+      <h2>La bomonera</h2>
+      <p>Endereço: Av. Professor Mário Werneck, 569</p>
+      <p>Horário de Funcionamento: 7h - 21h</p>
+      <button onclick="alert('Você escolheu jogar em La bomonera!')">Escolher</button>
+    </div>
+    <div class="card">
+      <h2>Minas Boca</h2>
+      <p>Endereço: Rua Bráz, 10 - Nova Granada</p>
+      <p>Horário de Funcionamento: 8h - 22h</p>
+      <button onclick="alert('Você escolheu jogar em Minas Boca!')">Escolher</button>
+    </div>
+    <div class="card">
+      <h2>Centro Esportivo Vila Rica</h2>
+      <p>Endereço:R. Vila Rica, 1114 - Padre Eustáquio</p>
+      <p>Horário de Funcionamento: 9h - 21h</p>
+      <button onclick="alert('Você escolheu jogar em Centro Esportivo Vila Rica!')">Escolher</button>
+    </div>
+  </div>
+  <div class="card-criação">
+    <button onclick="createCard()">+</button>
+  </div>
+  <script>
+    function createCard() {
+      var cardContainer = document.querySelector('.container');
+
+
+      var newCard = document.createElement('div');
+      newCard.classList.add('card');
+
+      
+      var nome = prompt('Digite o nome do local:');
+      var endereco = prompt('Digite o endereço do local:');
+      var horario = prompt('Digite o horário de funcionamento do local:');
+
+      
+      var cardContent = '<h2>' + nome + '</h2>' +
+                        '<p>Endereço: ' + endereco + '</p>' +
+                        '<p>Horário de Funcionamento: ' + horario + '</p>' +
+                        '<button onclick="alert(\'Você escolheu jogar em ' + nome + '!\')">Escolher</button>';
+
+      
+      newCard.innerHTML = cardContent;
+
+      
+      cardContainer.appendChild(newCard);
+    }
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>CRIAR um novo time</title>
+    <style>
+      body {
+        background: radial-gradient(#272727,#191a1c);
+        color: green;
+        font-size: 24px;
+        text-align: center;
+      }
+      
+      .form-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      
+      form {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      label, input[type=text] {
+        display: inline-block;
+        padding: 10px;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+      }
+      
+      button {
+        padding: 10px 20px;
+        background-color: green;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        font-size: 24px;
+        cursor: pointer;
+      }
+      
+      .logo-img {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 150px; /* Defina a largura desejada */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CRIAR um novo time</h1>
+    <div class="form-wrapper">
+      <img src="img/logo.png" alt="" class="logo-img">
+      <form>
+        <label for="team-name" style="display: inline-block; width: 120px; text-align: right;">Nome do time:</label>
+        <input type="text" id="team-name" name="team-name" placeholder="Digite o nome do time">
+
+        <label for="team-state" style="display: inline-block; width: 120px; text-align: right;">Estado:</label>
+        <input type="text" id="team-state" name="team-state" placeholder="Digite o estado do time">
+
+        <label for="team-city" style="display: inline-block; width: 120px; text-align: right;">Cidade:</label>
+        <input type="text" id="team-city" name="team-city" placeholder="Digite a cidade do time">
+
+        <button type="submit">Criar time</button>
+      </form>
+    </div>
+
+    <script>
+      const form = document.querySelector('form');
+
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const teamName = document.getElementById('team-name').value;
+        const teamState = document.getElementById('team-state').value;
+        const teamCity = document.getElementById('team-city').value;
+
+        alert(`Time ${teamName} criado com sucesso em ${teamCity}, ${teamState}!`);
+      });
+    </script>
+  </body>
+</html>

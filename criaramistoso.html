@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cadastro de Partida Amistosa</title>
+  <link rel="stylesheet" type="text/css" href="css/criaramistoso.css">
+  <script src="criaramistoso.js"></script>
+</head>
+<body>
+  <h1>Cadastro de Partida Amistosa</h1>
+  <form id="cadastroForm" action="salvar_partida.php" method="post">
+    <label for="time_des">Time Desafiante:</label>
+    <input type="text" id="time_des" name="time_des" required><br><br>
+
+    <label for="regiao">Regi&atilde;o:</label>
+    <input type="text" id="regiao" name="regiao" required><br><br>
+
+    <label for="local">Local:</label>
+    <input type="text" id="local" name="local" required><br><br>
+
+    <label for="data">Data:</label>
+    <input type="date" id="data" name="data" required><br><br>
+
+    <label for="hora">Hora:</label>
+    <input type="time" id="hora" name="hora" required><br><br>
+
+    <label for="bola">Quem trar&aacute; a bola:</label>
+    <input type="text" id="bola" name="bola" required><br><br>
+
+    <button type="submit">Cadastrar Partida</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Forúm</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/forum.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <script src="js/forum.js"></script>
+</head>
+<body>
+    <div class="container1">
+        <div class= "navbar">
+            <div class = "logo">
+                <a href="index.html"><img src ="img/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="">Login</a></li>
+                    <li><a href="">Criar conta</a></li>
+                </ul>
+            </nav>
+       </div>
+    </div>
+    <div class="container">
+        <form onsubmit="search(event)">
+            <input type="text" id="searchInput" placeholder="Digite o Local">
+            <button type="submit"><img src="botãodepesquisa.png" alt=""></button>
+            <select id ="filtroSelect">
+                <option value="">Período</option>
+                <option value="Manhã">Manhã</option>
+                <option value="Tarde">Tarde</option>
+                <option value="Noite">Noite</option>
+            </select>
+            <div class="data"><input type="date" id="dateInput"></div>
+        </form>
+        
+        <div class="box">
+            <div class="container2">
+                <h1 style="text-align: center;">Local 1</h1>
+                <p>Dia: 2023-06-11</p>
+                <small>Horário: 10:00</small>
+                <p>Detalhes: Detalhes do Post 1</p>
+            </div>
+            <div class="container2">
+                <h1 style="text-align: center;">Local 2</h1>
+                <p>Dia: 2023-06-12</p>
+                <small>Horário: 15:30</small>
+                <p>Detalhes: Detalhes do Post 2</p>
+            </div>
+            <div class="container2">
+                <h1 style="text-align: center;">Local 3</h1>
+                <p>Dia: 2023-06-13</p>
+                <small>Horário: 09:00</small>
+                <p>Detalhes: Detalhes do Post 3</p>
+            </div>
+            <div class="container2">
+                <h1 style="text-align: center;">Local 4</h1>
+                <p>Dia: 2023-06-14</p>
+                <small>Horário: 14:00</small>
+                <p>Detalhes: Detalhes do Post 4</p>
+            </div>
+            <div class="container2">
+                <h1 style="text-align: center;">Local 5</h1>
+                <p>Dia: 2023-06-15</p>
+                <small>Horário: 17:30</small>
+                <p>Detalhes: Detalhes do Post 5</p>
+            </div>
+            <div class="container2">
+                <h1 style="text-align: center;">Local 6</h1>
+                <p>Dia: 2023-06-16</p>
+                <small>Horário: 11:00</small>
+                <p>Detalhes: Detalhes do Post 6</p>
+            </div>
+            <div class="container2">
+                <h1 style="text-align: center;">Local 7</h1>
+                <p>Dia: 2023-06-17</p>
+                <small>Horário: 19:00</small>
+                <p>Detalhes: Detalhes do Post 7</p>
+            </div>
+            <div class="container2">
+                <h1 style="text-align: center;">Local 8</h1>
+                <p>Dia: 2023-06-18</p>
+                <small>Horário: 16:30</small>
+                <p>Detalhes: Detalhes do Post 8</p>
+            </div>
+            <div class="container2">
+                <h1 style="text-align: center;">Local 9</h1>
+                <p>Dia: 2023-06-19</p>
+                <small>Horário: 12:30</small>
+                <p>Detalhes: Detalhes do Post 9</p>
+            </div>
+        </div> 
+    </div>
+
+</body>
+</html>

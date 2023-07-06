@@ -1,0 +1,24 @@
+body {
+    
+  background: radial-gradient(#272727,#191a1c);
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #0edf2a;
+}
+
+label {
+    font-weight: bold;
+    color: white;
+}
+
+input[type="text"], button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#resultado {
+    margin-top: 20px;
+}

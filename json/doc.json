@@ -1,0 +1,38 @@
+{
+    "forum": {
+      "title": "Fórum",
+      "url": "forum.html"
+    },
+    "meu_time": {
+      "title": "Meu Time",
+      "url": "meu_time.html"
+    },
+    "novo_time": {
+      "title": "Novo Time",
+      "url": "novo_time.html"
+    },
+    "novo_desafio": {
+      "title": "Novo Desafio",
+      "url": "novo_desafio.html"
+    },
+    "login": {
+      "title": "Login",
+      "url": "login.html"
+    },
+    "registrar": {
+      "title": "Registrar",
+      "url": "registrar.html"
+    },
+    "suporte": {
+      "title": "Suporte",
+      "url": "#"
+    },
+    "ajuda": {
+      "title": "Ajuda",
+      "url": "#"
+    },
+    "duvidas": {
+      "title": "Dúvidas",
+      "url": "#"
+    }
+  }
